@@ -15,7 +15,7 @@ type JsonValue =
     | JsonValue[]
     | { [key: string]: JsonValue };
 
-export default function Component() {
+export default function JsonPage() {
     const [jsonInput, setJsonInput] = useState("");
     const [parsedJson, setParsedJson] = useState<JsonValue | null>(null);
     const [error, setError] = useState<string | null>(null);
